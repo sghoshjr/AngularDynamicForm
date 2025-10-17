@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ts": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortImports": "explicit",
+    "source.addMissingImports.ts": "explicit"
+  },
+  "eslint.validate": ["typescript", "html"],
+  "eslint.format.enable": false,
+  "files.eol": "\n",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "prettier.requireConfig": true,
+  "eslint.enable": true,
+  "prettier.enable": true
+}

@@ -8,14 +8,18 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config([
   {
     ignores: [
-      'dist',
       'projects/**/*',
       'node_modules',
       '.config/',
-      'dist/',
       'tsconfig.json',
       'tsconfig.app.json',
       'tsconfig.spec.json',
+      'dist/',
+      'tmp/',
+      'out-tsc/',
+      'bazel-out/',
+      'build/',
+      'output/',
     ],
   },
 

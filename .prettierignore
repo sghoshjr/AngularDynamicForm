@@ -5,3 +5,5 @@ package-lock.json
 tmp
 out-tsc
 bazel-out
+build
+output

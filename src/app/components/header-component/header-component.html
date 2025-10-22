@@ -1,0 +1,39 @@
+<header
+  class="sticky top-0 z-50 flex w-full items-center justify-between border-b border-gray-200 bg-teal-600 px-6 py-3 shadow-sm"
+>
+  <!-- Left: Logo + Navigation -->
+  <div class="flex items-center gap-8">
+    <!-- Logo + App Name -->
+    <div class="flex cursor-pointer items-center gap-2 select-none" routerLink="/home">
+      <i class="pi pi-code text-2xl text-primary"></i>
+      <span class="text-lg font-semibold text-primary">DynamicForms</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="flex items-center gap-6 text-sm font-medium text-gray-700">
+      @for (item of navItems; track item.route) {
+        <a
+          [routerLink]="item.route"
+          routerLinkActive="text-primary font-semibold border-b-2 border-primary"
+          class="flex items-center gap-2 px-1 py-0.5 transition-colors hover:text-primary"
+        >
+          @if (item.icon) {
+            <i [class]="item.icon"></i>
+          }
+          {{ item.label }}
+        </a>
+      }
+    </nav>
+  </div>
+
+  <!-- Right: Icons -->
+  <div class="flex items-center gap-5 text-gray-600">
+    <button class="transition-colors hover:text-primary" aria-label="Settings">
+      <i class="pi pi-cog text-xl"></i>
+    </button>
+
+    <button class="transition-colors hover:text-primary" aria-label="User">
+      <i class="pi pi-user text-xl"></i>
+    </button>
+  </div>
+</header>
